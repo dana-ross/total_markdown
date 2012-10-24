@@ -1,4 +1,6 @@
 total_markdown
 ==============
 
-WordPress plugin to completely replace the Visual &amp; HTML editors with Markdown
+For @jaison
+
+Disables the Visual & HTML editors for Page & Post editors. Disables WordPress's "texturize" filtering. Applies Michel Fortin's "PHP Markdown" library to page & post content.
