@@ -10,14 +10,6 @@ License: BSD
 */
 
 class TotalMarkdown {
-	public static function wp_default_editor() {
-		return 'html';
-	}
-
-	public static function admin_enqueue_scripts() {
-		wp_register_script( 'total_markdown', plugins_url('total_markdown.js', __FILE__), 'jquery', '1.0.0', true );
-        wp_enqueue_script( 'total_markdown' );
-	}
 
     public static function init() {
 	    remove_filter('the_content', 'wpautop');
@@ -28,12 +20,15 @@ class TotalMarkdown {
     	return Markdown($content);
     }
 
+    public static function user_can_richedit($huh) {
+	return false;
+    }
+
 }
 
-add_filter( 'wp_default_editor', array('TotalMarkdown', 'wp_default_editor') );
-add_action( 'admin_enqueue_scripts', array('TotalMarkdown', 'admin_enqueue_scripts' ));
 add_action( 'init', array('TotalMarkdown', 'init'));
 add_filter( 'the_content', array('TotalMarkdown','the_content') );
+add_filter( 'user_can_richedit', array('TotalMarkdown', 'user_can_richedit'));
 
 if(!defined('MARKDOWN_VERSION')) {
 	include(dirname(__FILE__)."/markdown/markdown.php");
