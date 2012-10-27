@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Total Markdown
-Plugin URI: 
-Description: 
+Plugin URI: https://github.com/daveross/total_markdown
+Description:  Lightweight Markdown support
 Author: Dave Ross
-Version: 0.1
+Version: 0.2
 Author URI: http://davidmichaelross.com
 License: BSD
 */
