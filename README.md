@@ -4,6 +4,8 @@ Unlike other Markdown plugins for WordPress, this one aims to be as lightweight 
 
 Of course, you're free to include good old HTML and even WordPress shortcodes in your content, and they'll work as expected. But *Total Markdown* isn't going to hold your hand with a pretty WYSIWYG editor or anything.
 
+Total Markdown has been tested with WordPress 3.4 and 3.5.
+
 ##What is Markdown?
 
 Markdown is a format for creating content that can be read by humans, yet easily converted to machine formats like HTML. Basic Markdown formatting borrows much from typographical conventions used on early online systems like Usenet. But you don't have to be "old school" to use it, understand it, or enjoy it.
